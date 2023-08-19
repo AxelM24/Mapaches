@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #69fdab;
+
+}
+.encabezado{
+    background-color: rgb(84, 255, 32);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+.logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 20px;
+}
+.logo h1{
+    color: rgb(40, 70, 15);
+    position: relative;
+    left: 20px;
+}
+.img{
+    height: 80px;
+}
+.navegacion{
+    align-items: center;
+}
+.navegacion ul{
+    display: flex;
+    right: 30px;
+}
+.navegacion ul li a{
+    font-size: 20px;
+    padding: 25px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.navegacion ul li a:hover{
+    padding: 35px;
+}
+.mexico:hover{
+    background-image: url(palacio-bellas-artes-1-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    opacity: 0.8;
+    border-radius: 20px;
+    color: white;
+}
+.francia:hover{
+    background-image: url(torre\ eiffel.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    opacity: 0.8;
+    bottom: 100px;
+    border-radius: 20px;
+    color: white;
+}
+.inglaterra:hover{
+    background-image: url(puente.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 180px;
+    opacity: 0.8;
+    bottom: 100px;
+    border-radius: 20px;
+    color: white;
+}
+.españa:hover{
+    background-image: url(lasagradafamilia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 180px;
+    opacity: 0.8;
+    bottom: 100px;
+    border-radius: 20px;
+    color: white;
+}
+.coreadelsur:hover{
+    background-image: url(torre.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    opacity: 0.8;
+    bottom: 100px;
+    border-radius: 30px;
+    color: white;
+}
+.horarios{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    top: 80px;
+    display: flex;
+    flex-direction: column;    
+}
+.relojm{
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    background-color: #69fdac00;
+    border-style: none;
+    font-family: 'Tektur', cursive;
+}
+h6{
+    display: none;
+}
+.horaimg{
+    height: 180px;
+    align-items: center;
+    display: none;
+}
+.mexicoh{
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #93ffc3;
+}
+@media(max-width: 1200px){
+   .encabezado{
+    display: none;
+   }
+   .horarios{
+    display: none;
+   }
+   .saludo h6{
+    display: block;
+    font-size: 30px;
+   }
+}

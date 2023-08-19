@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practica.css">
+    <link rel="shortcut icon" href="Mapache1.png" type="image/x-icon">
+    <title>Mapaches</title>
+    <script language="JavaScript">
+        function mueveReloj(){
+            momentoActual = new Date()
+            hora = momentoActual.getHours() 
+            minuto = momentoActual.getMinutes()
+            segundo = momentoActual.getSeconds()
+        
+            horaImprimible = hora + " : " + minuto + " : " + segundo
+        
+            document.form_reloj.reloj.value = horaImprimible
+        
+            setTimeout("mueveReloj()",1000)
+        }
+    </script>
+</head>
+<body onload="mueveReloj()">
+    <header>
+        <div class="saludo">
+            <h6>joto</h6>
+        </div>
+        <div class="encabezado">
+            <div class="logo">
+                <img src="Mapache1.png" alt="" class="img">
+                <h1 class="titulo">Mapaches</h1>
+            </div>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="#" class="mexico">Mexico</a></li>
+                    <li><a href="#" class="francia">Francia</a></li>
+                    <li><a href="#" class="inglaterra">Inglaterra</a></li>
+                    <li><a href="#" class="españa">España</a></li>
+                    <li><a href="#" class="coreadelsur">Corea del sur</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="horarios">
+            <div class="mexicoh">
+                <h2>Hora:</h2>
+                <form name="form_reloj">
+                    <input type="text" name="reloj" size="10" class="relojm">
+                </form>
+                <div>
+                    <img src="palacio-bellas-artes-1-1.jpg" alt="" class="horaimg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scrip.js"></script>
+</body>
+</html>
